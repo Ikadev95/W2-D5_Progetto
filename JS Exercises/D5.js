@@ -19,7 +19,7 @@ for (let i = 0; i < pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 pets.sort();
-console.log(pets);
+console.log("L'array è stato ordinato in ordine alfabetico", pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
@@ -29,9 +29,12 @@ for (let i = pets.length - 1; i >= 0; i--) {
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-let primo = pets.shift();
-pets.push(primo);
-console.log(pets);
+function lastPosition(array) {
+    let primo = pets.shift();
+    pets.push(primo);
+    return array;
+}
+console.log("Il primo elemento è stato spostato in ultima posizione: ", lastPosition(pets));
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -87,7 +90,7 @@ const justTrims = [];
 for (let i = 0; i < cars.length; i++) {
     justTrims.push(cars[i].trims[0]);
 }
-console.log(justTrims);
+console.log("Questi sono i primi elementi della proprietà trims ", justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -101,7 +104,7 @@ for (let i = 0; i < cars.length; i++) {
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
-const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
+const numericArray = [6, 90, 45, 75, 84, 98, 32, 74, 31, 2, 8, 23, 100, 35, 66, 313, 321, 105];
 let i = 0;
 while (i < numericArray.length && numericArray[i] !== 32) {
     console.log(numericArray[i]);

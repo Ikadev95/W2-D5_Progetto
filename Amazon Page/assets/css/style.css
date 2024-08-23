@@ -55,7 +55,8 @@ h2 {
 }
 .HolidayGifts {
     background-image: url("../images/bg-image.png");
-    padding-block: 48px;
+    padding-bottom: 48px;
+    padding-top: 64px;
     background-position: top;
     background-size: contain;
     margin-bottom: 24px;
@@ -73,6 +74,7 @@ h2 {
     height: 100%;
     border-radius: 20px;
     display: inline-block;
+
     width: calc(25% - 20px);
     margin-left: 20px;
     -webkit-box-shadow: 5px 8px 11px 0px rgba(196, 196, 196, 0.68);
@@ -112,12 +114,10 @@ section{
 .fotoVisore{
     background-image: url("../images/img_9.png");
     background-size: cover;
-    background-position: center;
 }
 .fotoSound{
     background-image: url("../images/img_10.png");
     background-size: cover;
-    background-position: center;
 }
 main a{
     color: #1A6777;
